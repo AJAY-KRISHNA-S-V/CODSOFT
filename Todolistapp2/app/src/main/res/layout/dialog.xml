@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/nameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+
+        <Spinner
+            android:id="@+id/prioritySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameEdit"
+            android:layout_marginTop="10dp"
+            android:padding="12dp"/>
+
+        <Button
+            android:id="@+id/dueDateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/prioritySpinner"
+            android:layout_marginTop="10dp"
+            android:text="Select Due Date"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+
+        <EditText
+            android:id="@+id/descriptionEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dueDateButton"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:textSize="20sp"
+            android:padding="12dp"/>
+    </RelativeLayout>
+</RelativeLayout>
